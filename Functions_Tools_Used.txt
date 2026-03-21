@@ -1,0 +1,53 @@
+pizza_name_id
+	- removed the size of the pizza. 
+		FUNCTIONS USED
+			- RIGHT & SUBSTITUTE FUNCTIONS to remove the pizza size in the last value.
+
+order_date
+	- format the date because of inconsistent format
+		TOOLBAR USED
+			- TEXT TO COLUMN to format the date
+
+DAY (Added column)
+	- to display the day of the week (mon-sun)
+		FUNCTIONS USED
+			- TEXT FUNCTION to display the day from the order_date column
+
+WEEKS (Added column)
+	- to display the weeks for weekly reports
+		FUNCTIONS USED
+			- WEEKNUM FUNCTION to determine the week in a year
+
+order_time
+	- format the time, removed the seconds
+		FUNCTIONS USED
+			- ROUND FUNCTION to produced accurate time
+
+HOUR RANGE (Added column)
+	- to create hour range for pivot table & charts (para di na gamitin ang order_time column to displa
+		FUNCTIONS USED
+			- VLOOKUP FUNCTION w/ APPROXIMATE 
+TIME (Added sheet)
+	- to create a list of time for HOUR RANGE column
+		FUNCTIONS USED
+			-ROUND & MOD FUNCTIONS to match the value of the time for VLOOKUP. It 
+			 produced exact time value. Removes extra decimal places & date that 
+			 can affect accuracy of the time.
+
+STARTING TIME
+	- helper column to sort the time in pivot table in Time Analysis Sheet
+		FUNCTIONS USED
+			- TIMEVALUE & LEFT FUNCTION to extract the first hour (11 AM) in the HOUR
+			  RANGE Column 
+
+unit_price & total_price
+	- format currency
+		TOOLBAR USED
+			-accounting to format the currency
+
+pizza_size
+	- replace the s,m,l,xl,xxl
+		TOOLBAR USED
+			- find & select to complete the meaning of sizes of pizza using replace
+
+
